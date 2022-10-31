@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400;500;600;700&family=Kolker+Brush&family=Pacifico&family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+/* ---reset css--- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* scrollbar */
+body::-webkit-scrollbar {
+    width: 0.1px;
+}
+   
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+   
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+/* ---desktop--- */
+/* ---header--- */
+.desktop{
+    overflow-x: hidden;
+    width: 100vw;
+}
+.desktop .header{
+    background-color: hsl(20, 33%, 95%);
+    position: relative;
+    height: 100vh;
+    font-family: 'Kolker Brush', cursive;
+    font-size: 60px;
+    color: #183435;
+}
+.desktop .header .img-header{
+    position: absolute;
+    right: -200px;
+    height: 100vh;
+}
+.desktop .header .content-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 100vh;
+}
+.desktop .invite{
+    width: 100vw;
+    height: fit-content;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    background-image: url("../img/flowerr.png"), url("../img/flowerb.png");
+    background-repeat: no-repeat;
+    background-position:  top -130px right -250px, bottom -70px left -100px;
+    /* background-size: 30% 40%; */
+}
+.desktop .invite img{
+    width:initial
+}
+.desktop .invite .line-ball{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.desktop .invite .line-ball .line{
+    width: 150px;
+    height: 0.1px;
+    border: 1px solid #E1E9F1;
+}
+.desktop .invite .line-ball .ball{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #E1E9F1;
+    margin: 40px 50px;
+}
+.desktop .invite .time{
+    display: flex;
+    justify-content: center;
+}
+.desktop .invite .time .square{
+    margin: 30px 10px;
+    height: 250px;
+    width: 250px;
+    border: 2px solid #E1E9F1;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 50px;
+}
+.desktop .invite .event{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+}
+.desktop .invite .event .item-event{
+    color: #0D214F;
+    display: flex;
+    flex-direction: row;
+}
+.desktop .invite .event .item-event .left{
+    text-align: right;
+    width: calc((100vw - 150px)/2);
+}
+.desktop .invite .event .item-event .right{
+    text-align: left;
+    width: calc((100vw - 150px)/2);
+}
+.desktop .invite .event .item-event .center{
+    width: 150px;
+    position: relative;
+    top: 30px;
+}
+.desktop .invite .event .item-event .center .center-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.desktop .invite .event .item-event .center .center-row .line{
+    height: 1px;
+    background-color: #0D214F;
+    width: 60px;
+}
+.desktop .invite .event .item-event .center .center-row .ball{
+    width: 10px;
+    height: 10px;
+    background-color: #0D214F;
+    border-radius: 50px;
+}
+.desktop .invite .event .item-event .center .center-column{
+    height: 150px;
+    width: 1px;
+    background-color: #0D214F;
+    margin: 0 auto;
+}
+.desktop .story{
+    background-color: hsl(20, 33%, 95%);
+    padding: 50px;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Pacifico', cursive;
+}
+.desktop .story .img-story{
+    margin: 50px auto;
+    width: 80vw;
+    height: auto;
+    position: relative;
+
+}
+.desktop .story .img-story img{
+    width: 100%;
+}
+.desktop .story .img-story .img-content{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    line-height: 1.5;
+}
+.desktop .story .item-story{
+    display: flex;
+    width: 80vw;
+    margin: 30px auto;
+}
+.desktop .story .item-story .left, .desktop .story .item-story .right{
+    width: 50%;
+}
+.desktop .story .item-story .left.img, .desktop .story .item-story .right.img{
+    background-color: hsl(20, 33%, 85%);
+    border-radius: 15px;
+    padding-bottom: 10px;
+}
+.desktop .story .item-story .left.img > img, .desktop .story .item-story .right.img > img{
+    width: 95%
+}
+.frame{
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 10px;
+}
+.frame img{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.desktop .album{
+    margin: 45px auto;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+.desktop .album .line-ball{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.desktop .album .line-ball .line{
+    width: 150px;
+    height: 0.1px;
+    border: 1px solid #E1E9F1;
+}
+.desktop .album .line-ball .ball{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #E1E9F1;
+    margin: 40px 50px;
+}
+.desktop .album .contain-album{
+    width: 85vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.desktop .album .contain-album .column{
+    width: calc((100% - 15px)/4);
+}
+.desktop .album .contain-album .column img{
+    width: 100%;
+    height: auto;
+}
+.desktop .footer{
+    background-color: hsl(20, 33%, 85%);
+    padding: 30px;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+}
