@@ -1,0 +1,640 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Bodoni:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+/* reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+/* container */
+.container{
+    width: 100vw;
+    height: fit-content;
+}
+/* header */
+.header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./img/banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header .title{
+    font-family: 'Libre Bodoni', serif;
+    font-size: 60px;
+    color: #675e5e;
+}
+.header .groom, .header .bride,  .header .and{
+    font-family: 'Great Vibes', cursive;
+    color: #675e5e;
+}
+.header .groom, .header .bride{
+    font-size: 100px;
+    color: #BB6350;
+}
+.header .and{
+    font-size: 120px;
+    color: #675e5e;
+    opacity: .3;
+}
+.header .time{
+    font-family: 'Libre Bodoni', serif;
+    font-size: 60px;
+    color: #675e5e;
+}
+.header img{
+    width: 20%;
+}
+.header div{
+    margin-bottom: 30px;
+}
+/* invite */
+.invite{
+    margin-top: 90px;
+    text-align: center;
+}
+.invite .title{
+    color: #BB6350;
+    font-family: 'Libre Bodoni', serif;
+    font-size: 60px;
+}
+.invite .sub-title{
+    color: #675e5e;
+    font-family: 'Libre Bodoni', serif;
+    font-size: 30px;
+    margin: 50px;
+}
+.invite .line{
+    width: 40%;
+    height: 1px;
+    background-color: #675E5E;
+    margin: 0 auto;
+    margin: 10px auto;
+}
+.invite .time{
+    background-image: url("./img/decorate-flower.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    font-size: 35px;
+    font-family: 'Libre Bodoni', serif;
+    color: #675e5e;
+}
+.invite .time .left, .invite .time .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.invite .time .left div{
+    margin: 35px;
+}
+.invite .time .left div:nth-child(2){
+    font-size: 70px;
+    color: #BB6350;
+}
+.invite .time .right div{
+    margin: 35px;
+}
+.invite .line-2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.invite .line-2 .ball{
+    width: 10px;
+    height: 10px;
+    border-radius: 40%;
+    background-color: #675E5E;
+}
+.invite .line-2 .linee{
+    width: 80%;
+    height: 1px;
+    background-color: #675E5E;
+}
+.invite .footer{
+    color: #675e5e;
+    margin-top: 50px;
+    font-size: 25px;
+    font-family: 'Libre Bodoni', serif;
+}
+.invite img{
+    width: 20%;
+    margin: 50px;
+}
+.invite .time .spec{
+    display: none;
+}
+/* album */
+.album-title{
+    margin-top: 90px;
+    color: #BB6350;
+    font-family: 'Libre Bodoni', serif;
+    font-size: 60px;
+    width: 100vw;
+    text-align: center;
+}
+.container .album{
+    width: 90%;
+    display: flex;
+    margin: 70px auto;
+}
+.container .album .left, .container .album .right, .container .album .center{
+    display: flex;
+    flex-direction: column;
+}
+.container .album .left, .container .album .right{
+    width: 25%;
+}
+.container .album .center{
+    width: 50%;
+}
+.container .album .left, .container .album .center{
+    margin-right: 5px;
+}
+.container .album .center{
+    margin-top: 5px;
+}
+.container .album .left img, .container .album .right img{
+    width: 100%;
+    margin-top: 5px;
+}
+/* timeline */
+.container .timeline{
+    width: 100vw;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.container .timeline .title{
+    color: #BB6350;
+    font-family: 'Libre Bodoni', serif;
+    font-size: 60px;
+}
+.container .timeline .content{
+    margin-top: 90px;
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.container .timeline .content > div{
+    font-family: 'Libre Bodoni', serif;
+    color: #675E5E;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+.container .timeline .content div > div{
+    margin: 10px 0px;
+}
+.mot, .hai{
+    font-size: 30px;
+}
+.hai{
+    font-family: 'Great Vibes', cursive;
+    color:#BB6350;
+}
+.ba{
+    height: 60px;
+    width: 1px;
+    background-color: #675E5E;
+}
+.bon{
+    width: 100%;
+    margin: 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    top: -30px;
+}
+.hafl-line{
+    width: 40%;
+    height: 1px;
+    background-color: #675E5E;
+}
+.ball{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: #675E5E;
+}
+/* countdown */
+.container .deco{
+    display: block;
+    margin: 0 auto;
+}
+.countdown-title{
+    color: #675E5E;
+    font-family: 'Libre Bodoni', serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+.countdown{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.date, .hour, .minute, .second{
+    width: 70px;
+    margin-right: 20px;
+    height: 120px;
+    border-radius: 20px;
+    border: 1px solid #BB6350;
+    box-shadow: 2px 2px #888888;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Libre Bodoni', serif;
+    color: #675E5E;
+}
+#date, #hour, #minute, #second{
+    font-weight: bold;
+    color: #BB6350;
+    font-size: 30px;
+}
+.second{
+    margin-right: 0px;
+}
+/* bank */
+.bank-title{
+    color: #EBC07D;
+    font-family: 'Libre Bodoni', serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+.bank{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.bank-one, .bank-two{
+    font-family: 'Libre Bodoni', serif;
+    color: #675E5E;
+    padding: 20px 20px;
+    width: 300px;
+    border-bottom: 1px dotted #675E5E;
+    cursor: pointer;
+}
+.bank-one div, .bank-two div{
+    margin: 10px;
+}
+.bank-one{
+    margin-bottom: 10px;
+}
+.deco2{
+    transform: rotate(180deg);
+}
+.bank-one:hover .qrcode, .bank-two:hover .qrcode{
+    display: block;
+}
+/* footer */
+.container > .footer{
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+.footer .left, .footer .right{
+    width: 40%;
+}
+.footer-title{
+    font-family: 'Great Vibes', cursive;
+    color: #BB6350;
+    margin-left: 25px;
+    margin-top: 50px;
+    font-size: 30px;
+}
+.left-content{
+    font-family: 'Libre Bodoni', serif;
+    color: #675E5E;
+    font-size: 14px;
+    margin-left: 25px;
+    text-align: justify;
+    line-height: 2;
+    margin-top: 15px;
+}
+.footer .right{
+    font-family: 'Libre Bodoni', serif;
+    color: #675E5E;
+    font-size: 14px;
+    margin-left: 25px;
+    text-align: justify;
+    line-height: 2;
+    margin-top: 50px;
+}
+input{
+    padding: 10px 10px;
+    border: 1px solid #BB6350;
+    font-family: 'Libre Bodoni', serif;
+    color: #675E5E;
+    font-size: 12px;
+    width: 70%;
+}
+.respon{
+    display: flex;
+}
+.respon div{
+    padding: 10px 20px;
+    border: 1px solid #BB6350;
+    margin-right: 20px;
+    cursor: pointer;
+}
+/* design */
+.design{
+    margin-top: 20px;
+    width: 100vw;
+    height: 75px;
+    background-color: #BB6350;
+    text-align: center;
+    line-height: 75px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Libre Bodoni', serif;
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    color: white;
+    font-weight: bold;
+    font-family: 'Libre Bodoni', serif;
+}
+.logo-ti{
+    position: relative;
+    left: -10px;
+}
+.img-des{
+    height: 40px;
+}
+@media only screen and (max-width: 1000px) {
+    .header .title, .header .time{
+        font-size: 30px;
+    }
+    .header .groom, .header .bride{
+        font-size: 70px;
+    }
+    .header .and{
+        font-size: 100px;
+    }
+    .header img{
+        width: 30%;
+    }
+    .invite .title{
+        font-size: 30px;
+    }
+    .invite .sub-title{
+        font-size: 25px;
+    }
+    .invite .time{
+        font-size: 30px;
+    }
+    .invite .time .left div:nth-child(2){
+        font-size: 50px;
+    }
+    .invite .time .left div, .invite .time .right div{
+        margin: 15px;
+    }
+    .invite img{
+        width: 30%;
+    }
+    .invite .footer{
+        font-size: 25px;
+    }
+    .invite .time .spec{
+        display: none;
+    }
+    .container .timeline .title{
+        font-size: 30px;
+    }
+    .mot{
+        font-size: 20px;
+    }
+    .hai{
+        font-size: 30px;
+    }
+    .timeline .content{
+        margin-top: 50px !important;
+    }
+    .nam{
+        font-size: 18px;
+    }
+    .album-title{
+        font-size: 30px;
+    }
+    input{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .header .groom, .header .bride{
+        font-size: 50px;
+    }
+    .header .and{
+        font-size: 70px;
+    }
+    .header img{
+        width: 40%;
+    }
+    .invite .title{
+        font-size: 30px;
+    }
+    .invite .sub-title{
+        font-size: 30px;
+    }
+    .invite .time{
+        font-size: 20px;
+    }
+    .invite .time .left div:nth-child(2){
+        font-size: 30px;
+    }
+    .invite .time .left div, .invite .time .right div{
+        margin: 10px;
+    }
+    .invite img{
+        width: 40%;
+    }
+    .invite .footer{
+        font-size: 30px;
+    }
+    .invite .time .spec{
+        display: none;
+    }
+    .timeline .title{
+        margin-bottom: 50px;
+    }
+    .timeline .content{
+        display: contents !important;
+    }
+    .timeline .content > div{
+        width: 80% !important;
+        text-align: left !important;
+        margin: 0 auto;
+    }
+    .timeline .content div > div{
+        width: 100% !important;
+    }
+    .spec2{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px !important;
+    }
+    .spec2 .mot{
+        margin-right: 15px !important; 
+    }
+    .spec2 .mot:nth-child(2){
+        text-align: right;
+    }
+    .ba{
+        display: none;
+    }
+    .container .album .left{
+        display: none;
+    }
+    .container .album .center{
+        width: 59% !important;
+        margin-right: 5px;
+    }
+    .container .album .right{
+        width: 39% !important;
+    }
+    .album-title{
+        font-size: 30px;
+    }
+    input{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .container .footer{
+        display: contents;
+    }
+    .container .footer .left, .container .footer .right{
+        width: 100%;
+    }
+    input{
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .header .groom, .header .bride{
+        font-size: 40px;
+    }
+    .header .and{
+        font-size: 60px;
+    }
+    .invite .title{
+        font-size: 25px;
+    }
+    .invite .sub-title{
+        font-size: 20px;
+    }
+    .invite .time{
+        font-size: 18px;    
+        background: unset;
+        display: contents;
+    }
+    .invite .time .left, .invite .time .right{
+        width: 100%;
+        text-align: center;
+    }
+    .invite .time .left div:nth-child(2){
+        font-size: 28px;
+    }
+    .invite .time .left div, .invite .time .right div{
+        margin: 7px;
+    }
+    .invite .time .spec{
+        margin: 15px 0px;
+        display: flex;
+    }
+    .invite img{
+        width: 40%;
+    }
+    .invite .footer{
+        font-size: 20px;
+    }
+    .spec2 .mot{
+        font-size: 15px;
+    }
+    .nam{
+        font-size: 18px;
+    }
+    .album-title{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .header .groom, .header .bride{
+        font-size: 30px;
+    }
+    .header .and{
+        font-size: 50px;
+    }
+    .invite .time{
+        background-image: none;
+        display: contents;
+    }
+    .invite img{
+        width: 40%;
+    }
+}
