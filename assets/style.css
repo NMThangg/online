@@ -108,7 +108,7 @@ table {
     color: #675e5e;
     font-family: 'Libre Bodoni', serif;
     font-size: 20px;
-    margin: 50px;
+    margin: 20px;
 }
 .invite .line{
     width: 40%;
@@ -144,6 +144,9 @@ table {
 }
 .invite .time .right div{
     margin: 35px;
+}
+.invite .time .right div:nth-child(1){
+    color: #BB6350;
 }
 .invite .line-2{
     width: 100%;
@@ -374,7 +377,7 @@ table {
     font-size: 14px;
     margin-left: 25px;
     text-align: justify;
-    line-height: 2;
+    line-height: 1.2;
     margin-top: 15px;
 }
 .footer .right{
@@ -473,7 +476,7 @@ input{
         font-size: 20px;
     }
     .hai{
-        font-size: 30px;
+        font-size: 45px;
     }
     .timeline .content{
         margin-top: 50px !important;
@@ -592,7 +595,11 @@ input{
         font-size: 25px;
     }
     .invite .sub-title{
-        font-size: 20px;
+        font-size: 22px;
+    }
+    .invite .sub-title.sub2{
+        font-size: 17px;
+        margin: 0px;
     }
     .invite .time{
         font-size: 18px;    
@@ -604,7 +611,7 @@ input{
         text-align: center;
     }
     .invite .time .left div:nth-child(2){
-        font-size: 28px;
+        font-size: 70px;
     }
     .invite .time .left div, .invite .time .right div{
         margin: 7px;
@@ -644,3 +651,4 @@ input{
         width: 40%;
     }
 }
+
