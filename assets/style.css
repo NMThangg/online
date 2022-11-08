@@ -67,7 +67,7 @@ table {
 }
 .header .title{
     font-family: 'Libre Bodoni', serif;
-    font-size: 60px;
+    font-size: 45px;
     color: #675e5e;
 }
 .header .groom, .header .bride,  .header .and{
@@ -75,17 +75,17 @@ table {
     color: #675e5e;
 }
 .header .groom, .header .bride{
-    font-size: 100px;
+    font-size: 85px;
     color: #BB6350;
 }
 .header .and{
-    font-size: 120px;
+    font-size: 100px;
     color: #675e5e;
     opacity: .3;
 }
 .header .time{
     font-family: 'Libre Bodoni', serif;
-    font-size: 60px;
+    font-size: 45px;
     color: #675e5e;
 }
 .header img{
