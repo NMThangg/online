@@ -277,7 +277,7 @@ table {
 .container .deco{
     display: block;
     margin: 0 auto;
-    width: 80%;
+    /* width: 80%; */
 }
 .countdown-title{
     color: #675E5E;
@@ -347,7 +347,7 @@ table {
 }
 .deco2{
     transform: rotate(180deg);
-    width: 80%;
+    /* width: 80%; */
 }
 .bank-one:hover .qrcode, .bank-two:hover .qrcode{
     display: block;
@@ -576,6 +576,9 @@ input{
     }
     input{
         width: 70%;
+    }
+    .deco, .deco2{
+        width: 80%;
     }
 }
 @media only screen and (max-width: 500px) {
