@@ -102,12 +102,12 @@ table {
 .invite .title{
     color: #BB6350;
     font-family: 'Libre Bodoni', serif;
-    font-size: 60px;
+    font-size: 40px;
 }
 .invite .sub-title{
     color: #675e5e;
     font-family: 'Libre Bodoni', serif;
-    font-size: 30px;
+    font-size: 20px;
     margin: 50px;
 }
 .invite .line{
@@ -126,7 +126,7 @@ table {
     display: flex;
     align-items: center;
     width: 100vw;
-    font-size: 35px;
+    font-size: 25px;
     font-family: 'Libre Bodoni', serif;
     color: #675e5e;
 }
@@ -181,7 +181,7 @@ table {
     margin-top: 90px;
     color: #BB6350;
     font-family: 'Libre Bodoni', serif;
-    font-size: 60px;
+    font-size: 50px;
     width: 100vw;
     text-align: center;
 }
@@ -219,7 +219,7 @@ table {
 .container .timeline .title{
     color: #BB6350;
     font-family: 'Libre Bodoni', serif;
-    font-size: 60px;
+    font-size: 40px;
 }
 .container .timeline .content{
     margin-top: 90px;
