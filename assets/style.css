@@ -313,7 +313,7 @@ table {
 #date, #hour, #minute, #second{
     font-weight: bold;
     color: #BB6350;
-    font-size: 30px;
+    font-size: 20px;
 }
 .second{
     margin-right: 0px;
